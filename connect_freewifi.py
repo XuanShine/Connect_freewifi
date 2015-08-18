@@ -40,13 +40,13 @@ def authentification(n=1):
         print(text)
 
     if "free" in get("http://google.fr").url:
-        print("Connection réussie mais toujours redirigée. Essai:", n)
+        print("Connection reussie mais toujours redirigee. Essai:", n)
         authentification(n+1)
     else:
-        print("Connection au service réussie")
+        print("Connection au service reussie")
 
 if __name__ == "__main__":
     if "free" in get("http://google.fr").url:
         authentification(1)
     else:
-        print("Vous êtes déjà connecté au réseau")
+        print("Vous etes deje connecte au reseau")
